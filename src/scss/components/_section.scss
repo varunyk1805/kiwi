@@ -1,0 +1,42 @@
+.section {
+  background-color: aqua;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid black;
+  //   @media screen and (min-width: 1200px) {
+  //   }
+
+  &--hero {
+    background: linear-gradient(129.34deg, #feca57 56.78%, #e3aa2d 101.94%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    //     max-width: 768px;
+    //     height: 400px;
+  }
+
+  &__title {
+    &--hero {
+      font-family: BebasNeue;
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 1;
+
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+
+      color: #212121;
+    }
+  }
+
+  &__subtitle {
+    font-family: Galada;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 4.2rem;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}

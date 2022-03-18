@@ -40,7 +40,7 @@ const watcher = () => {
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // Основні задачі
-const mainTasks = gulp.series(fonts, gulp.parallel(html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(html, scss, js, images, svgSprite));
 
 // Побудова сценаріїв виконання задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

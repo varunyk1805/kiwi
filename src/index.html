@@ -3,12 +3,20 @@
 @@include('html/head.html', {
     title: 'Kiwi',
 })
-<body>
+<body class="page">
     @@include('html/header.html')
     <main>
-        <img src="@img/ter.jpg" alt="">
+        @@include('html/hero.html')
+        @@include('html/getting.html')
+        @@include('html/box.html')
+        @@include('html/mission.html')
+        @@include('html/posts.html')
+        @@include('html/blog.html')
+        @@include('html/subscription.html')
+        @@include('html/feedback.html')
     </main>
     @@include('html/footer.html')
+    @@include('html/mobile-menu.html')
     <script src="js/app.min.js"></script>
 </body>
 </html>

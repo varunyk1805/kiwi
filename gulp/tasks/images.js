@@ -21,6 +21,52 @@ export const images = () => {
             )
         )
         .pipe(
+            webp()
+        )
+        .pipe(
+            gulp.dest(build.images)
+        )
+        .pipe(
+            gulp.src(src.images)
+        )
+        .pipe(
+            newer(build.images)
+        )
+        .pipe(
+            imagemin({
+                progressive: true,
+                svgoPlugins: [{removeViewBox: false}],
+                interlaced: true,
+                optimizationLevel: 3,
+            })
+        )
+        .pipe(
+            gulp.dest(build.images))
+        .pipe(
+            gulp.src(src.svg)
+        )
+        .pipe(
+            gulp.dest(build.images)
+        )
+        .pipe(
+            browserSync.stream()
+        ); 
+    
+    return gulp.src(src.images)
+        .pipe(
+            plumber(
+                notify.onError({
+                    title: 'IMAGES',
+                    message: 'Error: <%= error.message %>'
+                })
+            )
+        )
+        .pipe(
+            newer(
+                build.images
+            )
+        )
+        .pipe(
             ifGulp(
                 isBuild,
                 webp()

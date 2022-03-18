@@ -26,6 +26,50 @@ export const html = () => {
             )
         )
         .pipe(
+            webpHtmlNoSVG()
+        )
+        .pipe(
+            versionNumber({
+                'value': '%DT%',
+                'append': {
+                    'key': '_v',
+                    'cover': 0,
+                    'to': ['css', 'js']
+                },
+                'output': {
+                    'file': 'gulp/version.json',
+                },
+            })
+        )
+        .pipe(
+            gulp.dest(
+                build.html
+            )
+        )
+        .pipe(
+            browserSync.stream()
+        );
+    
+
+    return gulp.src(src.html)
+        .pipe(
+            fileInclude()
+        )
+        .pipe(
+            plumber(
+                notify.onError({
+                    title: 'HTML',
+                    message: 'Error: <%= error.message %>'
+                })
+            )
+        )
+        .pipe(
+            replace(
+                /@img\//g,
+                'img/'
+            )
+        )
+        .pipe(
             ifGulp(
                 isBuild,
                 webpHtmlNoSVG()

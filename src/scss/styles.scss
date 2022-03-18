@@ -1,11 +1,13 @@
 @import "fonts";
-
-body {
-  font-family: Roboto;
-  font-size: 50px;
-  background-color: aqua;
-
-  header {
-    color: brown;
-  }
-}
+@import "utils/colors";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/placeholders";
+@import "utils/html";
+@import "utils/reset";
+@import "components/page";
+@import "components/section";
+@import "components/container";
+@import "components/header";
+@import "components/footer";
+@import "components/mobile-menu";

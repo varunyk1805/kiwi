@@ -15,6 +15,66 @@ export const scss = () => {
 
     return gulp.src(
             src.scss,
+            { sourcemaps: true }
+        )
+        .pipe(
+            plumber(
+                notify.onError({
+                    title: 'SCSS',
+                    message: 'Error: <%= error.message %>'
+                })
+            )
+        )
+        .pipe(
+            replace(
+                /@img\//g,
+                '../img/'
+            )
+        )
+        .pipe(
+            sass({
+                outputStyle: 'expanded',
+            })
+        )
+        .pipe(
+            groupMediaQueries()
+        )
+        .pipe(
+            webpCSS({
+                webpClass: '.webp',
+                noWebpClass: '.no-webp',
+            })
+        )
+        .pipe(
+            autoPrefixer({
+                grid: true,
+                overrideBrowserslist: ["last 3 versions"],
+                cascade: true,
+            })
+        )
+        .pipe(
+            gulp.dest(
+                build.css
+            )
+        )
+        .pipe(
+            cleanCSS()
+        )
+        .pipe(
+            rename({
+                extname: '.min.css',
+            })
+        )
+        .pipe(
+            gulp.dest(
+                build.css)
+        )
+        .pipe(
+            browserSync.stream()
+        ); 
+    
+    return gulp.src(
+            src.scss,
             { sourcemaps: isDev }
         )
         .pipe(

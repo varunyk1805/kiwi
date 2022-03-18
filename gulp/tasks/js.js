@@ -7,7 +7,7 @@ export const js = () => {
 
     return gulp.src(
             src.js,
-            { sourcemaps: isDev }
+            { sourcemaps: true }
         )
         .pipe(
             plumber(

@@ -1,0 +1,23 @@
+.container {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+
+  //   @media screen and (min-width: 480px) {
+  //     width: 480px;
+  //   }
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

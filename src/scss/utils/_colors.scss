@@ -1,0 +1,23 @@
+$colors: (
+  "primary": #757575,
+  "secondary": #ffffff,
+  "text": #212121,
+  "accent": #2196f3,
+  "accent--btn": #188ce8,
+  "logo": #000000,
+  "background": #f5f4fa,
+  "background--hero": #c4c4c4,
+  "background--footer": #2f303a,
+  "background--services": rgba(47, 48, 58, 0.8),
+  "background--everflow": rgba(33, 150, 243, 0.9),
+  "contacts--footer": rgba(255, 255, 255, 0.6),
+  "socials--footer": rgba(255, 255, 255, 0.1),
+  "gradient--hero": rgba(47, 48, 58, 0.4),
+  "border--header": #ececec,
+  "border--projects-card": #eeeeee,
+  "icon-link": #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
