@@ -1,0 +1,45 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: BebasNeue;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+
+    color: #212121;
+
+    &:hover,
+    &:focus {
+      color: #01a3a4;
+    }
+
+    &--current {
+      color: #01a3a4;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -0.2rem;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #01a3a4;
+      }
+    }
+  }
+}

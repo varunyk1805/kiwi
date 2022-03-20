@@ -4,4 +4,42 @@
   padding-bottom: 0.5rem;
 
   border-bottom: 1px solid black;
+
+  &__mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+    @media screen and (min-width: 1992px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 9.6rem;
+
+    @media screen and (min-width: 1024px) {
+      width: 19.1rem;
+    }
+
+    @media screen and (min-width: 1992px) {
+      width: 19.1rem;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1992px) {
+      display: block;
+    }
+  }
 }
