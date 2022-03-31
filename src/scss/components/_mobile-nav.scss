@@ -1,0 +1,48 @@
+.mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+
+  color: #212121;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    &:last-child {
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__icon {
+    fill: none;
+    stroke: url(#linear-zigzag);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}

@@ -1,18 +1,48 @@
 <!-- Feedback -->
 <section class="section">
     <div class="container">
-        <h2>What do our</h2>
-        <p>clients say</p>
-        <img src="@img/feedback1.png" alt="feedback" width="80%">
-        <p>Jessica T.</p>
-        <img src="@img/stars.png" alt="stars">
-        <p>5/5</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.</p>
-        <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud.</p>
-        <img src="@img/arrow-left.png" alt="">
-        <img src="@img/arrow-right.png" alt="">
+        <h2 class="section__text section__text--feedback">What do our</h2>
+        <p class="section__title section__title--feedback">clients say</p>
+        <div class="feedback">
+            <div class="client">
+                <div class="client__header">
+                    <div class="image image--client">
+                        <img src="@img/feedback1.png" alt="feedback">
+                    </div>
+                    <div>
+                        <p class="client__name">Jessica T.</p>
+                        <div class="client__rating">
+                            <img src="@img/stars.png" alt="stars">
+                            <p class="client__value">5/5</p>
+                        </div>
+                    </div>
+                </div>
+                <svg class="zigzag-blog zigzag-blog--feedback" width="64" height="9">
+                    <use href="@img/icons/icons.svg#zigzag-blog"></use>
+                </svg>
+                <p class="client__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+                
+                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud.
+                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud.
+            </p>
+            </div>
+            <div class="feedback__page">
+                <button class="feedback__btn">
+                    <svg class="arrow-left" width="12" height="10">
+                        <use href="@img/icons/icons.svg#arrow-left"></use>
+                    </svg>
+                </button>
+                <button class="feedback__btn feedback__btn--right">
+                    <svg class="arrow-left" width="12" height="10">
+                        <use href="@img/icons/icons.svg#arrow-left"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
 </section>

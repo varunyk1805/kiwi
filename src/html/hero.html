@@ -1,42 +1,91 @@
 <!-- Hero -->
 <section class="section section--hero">
     <div class="container container--hero">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="250" height="250" preserveAspectRatio="none">
-            <defs>
-                <linearGradient id="myGradient" gradientTransform="rotate(180)">
-                    <stop offset="0%" stop-color="#fcf2bd" />
-                    <stop offset="100%" stop-color="#f5f5f6" />
-                </linearGradient>
-            </defs>
-            <ellipse class="ellipse" ry="98" rx="98" cy="125" cx="125" style="stroke:url(#myGradient);"  />
-        </svg>
         <h1 class="section__title section__title--hero">
             Everything you need
         </h1>
         <p class="section__subtitle">to Start Living Zero-Waste</p>
-        <ul class="grid">
-            <li class="grid__item">
-                <div class="thumb">
-                    <img class="thumb__image" src="@img/chest.png" alt="chest">
+        <div class="hero-content">
+            <div class="hero-content__items">
+                <div class="hero-content__item">
+                    <svg class="item-ellipse" width="66" height="66">
+                        <use href="@img/icons/icons.svg#item-ellipse"></use>
+                    </svg>
+                    <svg class="line line--chest" width="64" height="46">
+                        <use href="@img/icons/icons.svg#line-to-chest"></use>
+                    </svg>
+                    <div class="image image--chest" >
+                        <img src="@img/chest.png" alt="chest">
+                    </div>
                 </div>
-            </li>
-            <li class="grid__item">
-                <div class="thumb">
-                    <img class="thumb__image" src="@img/ladder.png" alt="ladder">
+                <div class="hero-content__item" style="position: relative;">
+                    <svg class="item-ellipse" width="66" height="66">
+                        <use href="@img/icons/icons.svg#item-ellipse"></use>
+                    </svg>
+                    <svg class="line line--ladder" width="49" height="19">
+                        <use href="@img/icons/icons.svg#line-to-ladder"></use>
+                    </svg>
+                    <div class="image image--ladder">
+                        <img src="@img/ladder.png" alt="ladder">
+                    </div>
                 </div>
-            </li>
-            <li class="grid__item">
-                <div class="thumb">
-                    <img class="thumb__image" src="@img/bag.png" alt="bag">
+                <div class="hero-content__item" style="position: relative;">
+                    <svg class="item-ellipse" width="66" height="66">
+                        <use href="@img/icons/icons.svg#item-ellipse"></use>
+                    </svg>
+                    <svg class="line line--bag" width="55" height="39">
+                        <use href="@img/icons/icons.svg#line-to-bag"></use>
+                    </svg>
+                    <div class="image image--bag">
+                        <img src="@img/bag.png" alt="bag">
+                    </div>
                 </div>
-            </li>
-            <li class="grid__item">
-                <div class="thumb">
-                    <img class="thumb__image" src="@img/jar.png" alt="jar">
+                <div class="hero-content__item" style="position: relative;">
+                    <svg class="item-ellipse" width="66" height="66">
+                        <use href="@img/icons/icons.svg#item-ellipse"></use>
+                    </svg>
+                    <svg class="line line--jar" width="77" height="52">
+                        <use href="@img/icons/icons.svg#line-to-jar"></use>
+                    </svg>
+                    <div class="image image--jar">
+                        <img src="@img/jar.png" alt="jar">
+                    </div>
                 </div>
-            </li>
-        </ul>
-        <img src="@img/open-box.png" width="80%" alt="open-box">
-        <button type="button">start now</button>
+            </div>
+            <div class="openbox" >
+                <svg class="openbox-bg" width="195" height="157" >
+                    <use href="@img/icons/icons.svg#openbox-bg"></use>
+                </svg>
+                <svg class="openbox-shadow" width="177" height="24">
+                    <use href="@img/icons/icons.svg#openbox-shadow"></use>
+                </svg>
+                <svg class="openbox-ellipse" width="20" height="20">
+                    <use href="@img/icons/icons.svg#openbox-ellipse"></use>
+                </svg>
+                <svg class="openbox-ellipse-half" width="20" height="14">
+                    <use href="@img/icons/icons.svg#openbox-ellipse-half"></use>
+                </svg>
+                <div class="image image--leaf-metal">
+                    <img src="@img/leaf-metal.png" alt="">
+                </div>
+                <div class="image image--leaf-green">
+                    <img src="@img/leaf-green.png" alt="">
+                </div>
+                <div class="image image--openbox">
+                    <img src="@img/openbox.png" alt="">
+                </div>
+            </div>
+            <div class="image image--hero-ellipse1">
+                <svg width="42" height="43" fill="url(#linear-hero-ellipse1)">
+                    <use href="@img/icons/icons.svg#hero-ellipse1"></use>
+                </svg>
+            </div>
+            <div class="image image--hero-ellipse2">
+                <svg width="48" height="48" fill="url(#linear-hero-ellipse2)">
+                    <use href="@img/icons/icons.svg#hero-ellipse2"></use>
+                </svg>
+            </div>
+        </div>
+        <button class="btn" type="button">start now</button>
     </div>
 </section>

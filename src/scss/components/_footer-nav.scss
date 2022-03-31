@@ -1,0 +1,28 @@
+.footer-nav {
+  margin-top: 3rem;
+
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+
+  color: #212121;
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}

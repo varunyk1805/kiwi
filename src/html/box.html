@@ -1,13 +1,28 @@
 <!-- Box -->
 <section class="section">
-    <div class="container">
-        <h2 class="section__title">BOX OF A MONTH</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    <div class="container container--box">
+        <svg class="zigzag" width="52" height="9">
+            <use href="@img/icons/icons.svg#zigzag"></use>
+        </svg>
+        <h2 class="section__title section__title--box">Box of a month</h2>
+        <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        <img src="@img/box1.png" alt="box">
-        <img src="@img/box2.png" alt="box">
-        <button type="button">See What's Inside</button>
+        <div class="section__content">
+            <div class="image image--box">
+                <img src="@img/box1.png" alt="box">
+            </div>
+            <div class="image image--box">
+                <img src="@img/box2.png" alt="box">
+            </div>
+            <svg class="box-ellipse1" width="36" height="36" fill="url(#linear-box-ellipse1)">
+                <use href="@img/icons/icons.svg#box-ellipse1"></use>
+            </svg>
+            <svg class="box-ellipse2" width="48" height="48" fill="url(#linear-box-ellipse2)">
+                <use href="@img/icons/icons.svg#box-ellipse2"></use>
+            </svg>
+        </div>
+        <button class="btn" type="button">See what's inside</button>
     </div>
 </section>

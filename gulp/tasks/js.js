@@ -17,10 +17,18 @@ export const js = () => {
                 })
             )
         )
+        // .pipe(
+        //     webpackStream({
+        //         mode: isBuild ? 'production' : 'development',
+        //         output: {filename: 'app.min.js'},
+        //     })
+        // )
         .pipe(
             webpackStream({
-                mode: isBuild ? 'production' : 'development',
-                output: {filename: 'app.min.js'},
+                mode: 'development',
+                output: {
+                    filename: 'app.min.js',
+                },
             })
         )
         .pipe(

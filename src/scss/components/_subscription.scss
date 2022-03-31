@@ -1,0 +1,65 @@
+.subscription {
+  margin-top: 3.3rem;
+
+  &__label {
+    font-family: BebasNeue;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #212121;
+
+    & * {
+      color: #01a3a4;
+    }
+  }
+
+  &__input {
+    margin-top: 0.8rem;
+    padding: 1.5rem;
+    width: 100%;
+    height: 6rem;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+
+    color: #000000;
+    background: #ffffff;
+
+    border: 1px solid;
+    border-image-source: linear-gradient(
+      141.39deg,
+      #74e6cf 13.88%,
+      #c0e594 106.32%
+    );
+    border-image-slice: 1;
+
+    &::placeholder {
+      color: #c4c4c4;
+    }
+  }
+
+  &__btn {
+    margin-top: 2.2rem;
+  }
+
+  &__privacy {
+    margin-top: 1rem;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+
+    color: #c4c4c4;
+
+    & a {
+      color: inherit;
+    }
+  }
+}

@@ -1,32 +1,89 @@
 .section {
-  background-color: aqua;
   padding-top: 5rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid black;
-  //   @media screen and (min-width: 1200px) {
-  //   }
+
+  background-color: #ffffff;
+
+  &:nth-child(2n + 1) {
+    background-color: #f0f8f6;
+  }
 
   &--hero {
     background: linear-gradient(129.34deg, #feca57 56.78%, #e3aa2d 101.94%);
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
 
-    //     max-width: 768px;
-    //     height: 400px;
+  &--posts {
+    padding-bottom: 2rem;
+  }
+
+  &--mobile-menu {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    z-index: 20;
+
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+
+    overflow: hidden;
+
+    &--hidden {
+      transform: translateY(-100%);
+    }
+
+    &--visible {
+      transform: translateY(0);
+    }
   }
 
   &__title {
+    font-family: AdventPro;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+
+    color: #000000;
+
     &--hero {
       font-family: BebasNeue;
       font-weight: 700;
       font-size: 3.2rem;
       line-height: 1;
 
-      text-align: center;
       letter-spacing: 0.05em;
       text-transform: uppercase;
 
       color: #212121;
+    }
+
+    &--box {
+      text-transform: uppercase;
+    }
+
+    &--mission {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      letter-spacing: 0.1em;
+
+      text-transform: uppercase;
+
+      color: #01a3a4;
+    }
+
+    &--posts,
+    &--subscription,
+    &--feedback {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -38,5 +95,71 @@
     text-align: center;
 
     color: #ffffff;
+
+    &--mission {
+      font-family: BebasNeue;
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 1;
+      text-align: center;
+
+      color: #000000;
+    }
+  }
+
+  &__text {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+
+    text-align: center;
+
+    color: #696969;
+
+    &--mission {
+      font-family: Galada;
+      font-weight: 400;
+      font-size: 2.6rem;
+      line-height: 4.2rem;
+
+      background: linear-gradient(141.39deg, #74e6cf 13.88%, #c0e594 106.32%);
+      background-clip: text;
+      color: transparent;
+    }
+
+    &--posts,
+    &--subscription,
+    &--feedback {
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: #01a3a4;
+    }
+
+    &--subscription,
+    &--feedback {
+      margin-top: 1rem;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &--posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
   }
 }

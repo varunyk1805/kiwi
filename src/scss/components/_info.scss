@@ -1,0 +1,32 @@
+.info {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+
+  color: #696969;
+
+  border-top: 0.1rem solid #f0f8f6;
+
+  &__owner {
+    line-height: 1.3rem;
+  }
+
+  &__development {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

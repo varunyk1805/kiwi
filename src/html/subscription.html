@@ -1,15 +1,47 @@
 <!-- Subscription -->
 <section class="section">
     <div class="container">
-        <h2>Stay in the know</h2>
-        <p>Hear about the latest sneak peaks and spoilers</p>
-        <img src="@img/open-box.png" alt="open-box" width="80%">
-        <p>get CAUSEBOX delivered directly to your inbox!</p>
-        <form action="">
-            <input type="text" placeholder="Your email adress">
-            <button type="submit">Sign up</button>
-            <p>By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web terms of use and privacy and cookie
-            policy</p>
+        <svg class="zigzag" width="52" height="9">
+            <use href="@img/icons/icons.svg#zigzag"></use>
+        </svg>
+        <p class="section__text section__text--subscription">Stay in the know</p>
+        <h2 class="section__title section__title--subscription">Hear about the latest sneak peaks and spoilers</h2>
+            <div class="openbox">
+                <svg class="openbox-bg" width="195" height="157">
+                    <use href="@img/icons/icons.svg#openbox-bg"></use>
+                </svg>
+                <svg class="openbox-shadow" width="177" height="24">
+                    <use href="@img/icons/icons.svg#openbox-shadow"></use>
+                </svg>
+                <svg class="openbox-ellipse" width="20" height="20">
+                    <use href="@img/icons/icons.svg#openbox-ellipse"></use>
+                </svg>
+                <svg class="openbox-ellipse-half" width="20" height="14">
+                    <use href="@img/icons/icons.svg#openbox-ellipse-half"></use>
+                </svg>
+                <div class="image image--leaf-metal">
+                    <img src="@img/leaf-metal.png" alt="">
+                </div>
+                <div class="image image--leaf-green">
+                    <img src="@img/leaf-green.png" alt="">
+                </div>
+                <div class="image image--openbox">
+                    <img src="@img/openbox.png" alt="">
+                </div>
+            </div>
+        <form class="subscription" action="">
+        <label class="subscription__label" for="">
+            Get causebox delivered directly
+            <span>to your inbox!</span>
+        </label>  
+        <input class="subscription__input" type="text" placeholder="Your email adress">
+        <button class="btn subscription__btn" type="submit">Sign up</button>
+        <p class="subscription__privacy">
+            By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web
+            <a href="#">terms of use</a>
+            and
+            <a href="#">privacy and cookie policy</a>
+        </p>
         </form>
     </div>
 </section>

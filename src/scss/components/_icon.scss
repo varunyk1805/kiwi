@@ -1,0 +1,132 @@
+.item-ellipse {
+  fill: url(#linear-item-ellipse);
+  opacity: 0.2;
+}
+
+.line {
+  fill: none;
+  stroke: #d69914;
+  stroke-dasharray: 5;
+
+  &--chest {
+    position: absolute;
+    top: 5.1rem;
+    left: 0.7rem;
+
+    transform: rotate(-125deg);
+  }
+
+  &--ladder {
+    position: absolute;
+    top: 7rem;
+    left: 4.3rem;
+
+    transform: rotate(-97deg);
+  }
+
+  &--bag {
+    position: absolute;
+    top: 6.1rem;
+    left: 3.8rem;
+
+    transform: rotate(-54deg);
+  }
+
+  &--jar {
+    position: absolute;
+    top: 6.9rem;
+    left: 0.8rem;
+
+    transform: rotate(-97deg);
+  }
+}
+
+.openbox-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  fill: #ffffff;
+  opacity: 0.2;
+  filter: blur(70px);
+}
+
+.openbox-shadow {
+  position: absolute;
+  top: 15rem;
+  left: 0.9rem;
+  transform: rotate(3deg);
+
+  fill: #000000;
+  opacity: 0.1;
+  filter: blur(15px);
+}
+
+.openbox-ellipse {
+  position: absolute;
+  top: 0.5rem;
+  left: 4.2rem;
+
+  fill: url(#linear-openbox-ellipse);
+}
+
+.openbox-ellipse-half {
+  position: absolute;
+  top: 9.5rem;
+  left: 15.1rem;
+
+  fill: url(#linear-openbox-ellipse-half);
+}
+
+.zigzag {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  fill: none;
+  stroke: url(#linear-zigzag);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  &--getting {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.box-ellipse1 {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.box-ellipse2 {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+}
+
+.zigzag-blog {
+  margin-top: 1.8rem;
+
+  fill: none;
+  stroke: url(#linear-zigzag);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  &--feedback {
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+}
+
+.arrow-left {
+  fill: white;
+}

@@ -1,0 +1,120 @@
+.blog {
+  margin-top: 2rem;
+  width: 100%;
+
+  &__content {
+    padding: 2.5rem 2.5rem 3rem;
+
+    border-right: 1px solid #f0f8f6;
+    border-bottom: 1px solid #f0f8f6;
+    border-left: 1px solid #f0f8f6;
+  }
+
+  &__title {
+    font-family: AdventPro;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+  }
+
+  &__text {
+    margin-top: 2rem;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+    color: #696969;
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    margin-left: auto;
+    padding-top: 0.4rem;
+    padding-right: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #01a3a4;
+    background-color: #f0f8f6;
+
+    border-color: transparent;
+    border-radius: 50px;
+  }
+
+  &__plus {
+    position: relative;
+    width: 2.2rem;
+    height: 2.2rem;
+
+    background-image: linear-gradient(
+      297.26deg,
+      #74e6cf 34.09%,
+      #c0e594 96.73%
+    );
+    border-radius: 50px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      display: block;
+      width: 0.2rem;
+      height: 0.8rem;
+
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+
+  &__pagination {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  &__label {
+    width: 6.6rem;
+    height: 0.2rem;
+    background-color: #f0f8f6;
+    border-radius: 10px;
+  }
+
+  &__radio {
+    @extend %visually-hidden;
+  }
+
+  &__radio:checked + &__label {
+    background-image: linear-gradient(
+      141.39deg,
+      #74e6cf 13.88%,
+      #c0e594 106.32%
+    );
+  }
+}

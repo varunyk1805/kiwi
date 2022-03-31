@@ -1,10 +1,30 @@
 <!-- Blog -->
 <section class="section">
     <div class="container">
-        <h2>What's new in blog?</h2>
-        <img src="@img/blog1.png" width="80%" alt="">
-        <h3>Why KIWI Eco Box?</h3>
-        <p>Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey</p>
-        <button type="button">Read more</button>
+        <h2 class="section__title section__title--blog">What's new in blog?</h2>
+        <div class="blog">
+            <div class="image">
+                <img src="@img/blog1.png" width="80%" alt="">
+            </div>
+            <div class="blog__content">
+                <h3 class="blog__title">Why KIWI Eco Box?</h3>
+                <svg class="zigzag-blog" width="64" height="9">
+                    <use href="@img/icons/icons.svg#zigzag-blog"></use>
+                </svg>
+                <p class="blog__text">Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey</p>
+                <button class="blog__btn" type="button">
+                    Read more
+                    <div class="blog__plus"></div>
+                </button>
+            </div>
+            <form class="blog__pagination">
+                <input class="blog__radio" type="radio" name="blog" value="1" id="page1" checked>
+                <label class="blog__label" for="page1"></label>
+                <input class="blog__radio" type="radio" name="blog" value="1" id="page2" checked>
+                <label class="blog__label" for="page2"></label>
+                <input class="blog__radio" type="radio" name="blog" value="1" id="page3" checked>
+                <label class="blog__label" for="page3"></label>
+            </form>
+        </div>
     </div>
 </section>

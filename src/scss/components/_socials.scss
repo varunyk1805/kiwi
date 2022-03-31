@@ -1,0 +1,29 @@
+.socials {
+  margin-top: 3rem;
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    list-style: none;
+  }
+
+  //   &__item {
+  //   }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3rem;
+    height: 3rem;
+
+    border: 0.1rem solid #01a3a4;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    fill: #01a3a4;
+  }
+}

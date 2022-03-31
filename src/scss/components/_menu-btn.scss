@@ -1,2 +1,23 @@
 .menu-btn {
+  width: 3rem;
+  height: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border-color: transparent;
+
+  &__icon {
+    fill: #34495e;
+
+    &--vissible {
+      display: block;
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
 }
