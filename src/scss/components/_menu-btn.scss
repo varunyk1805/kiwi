@@ -9,6 +9,10 @@
   background-color: transparent;
   border-color: transparent;
 
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
   &__icon {
     fill: #34495e;
 

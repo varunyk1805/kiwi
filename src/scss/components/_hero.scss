@@ -1,0 +1,135 @@
+.hero {
+  width: 100%;
+  height: 31.6rem;
+
+  text-align: center;
+
+  &__text {
+    font-family: Galada;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 4.2rem;
+
+    color: #ffffff;
+
+    &--mobile {
+    }
+
+    &--part1 {
+      display: none;
+    }
+
+    &--part2 {
+      display: none;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+
+  &__item-bg {
+    fill: url(#linear-item-ellipse);
+    opacity: 0.2;
+  }
+
+  &__chest {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+
+    width: 6.4rem;
+
+    transform: rotate(40deg);
+  }
+
+  &__ladder {
+    position: absolute;
+    top: 1.3rem;
+    left: 50%;
+    width: 6.3rem;
+
+    transform: translateX(-50%) rotate(-125deg);
+  }
+
+  &__bag {
+    position: absolute;
+    bottom: 0.6rem;
+    left: 0.6rem;
+    width: 6rem;
+  }
+
+  &__jar {
+    position: absolute;
+    top: 0;
+    left: 1.4rem;
+    width: 4rem;
+
+    transform: rotate(30deg);
+  }
+
+  &__line {
+    position: absolute;
+
+    fill: none;
+    stroke: #d69914;
+    stroke-dasharray: 5;
+
+    &--chest {
+      top: 5.1rem;
+      left: 0.7rem;
+
+      transform: rotate(-124deg);
+    }
+
+    &--ladder {
+      top: 7rem;
+      left: 4.3rem;
+
+      transform: rotate(-97deg);
+    }
+
+    &--bag {
+      top: 6.1rem;
+      left: 3.8rem;
+
+      transform: rotate(-54deg);
+    }
+
+    &--jar {
+      top: 6.9rem;
+      left: 0.8rem;
+
+      transform: rotate(-97deg);
+    }
+  }
+
+  &__ecobox {
+    margin-top: 1.5rem;
+    margin-left: 2.6rem;
+  }
+
+  &__ellipse1 {
+    position: absolute;
+    top: 25.7rem;
+    left: 3.8rem;
+
+    fill: url(#linear-hero-ellipse1);
+  }
+
+  &__ellipse2 {
+    position: absolute;
+    top: 25.4rem;
+    left: 17.4rem;
+
+    fill: url(#linear-hero-ellipse2);
+  }
+}
